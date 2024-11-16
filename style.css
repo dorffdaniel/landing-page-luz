@@ -4,11 +4,20 @@
     box-sizing: border-box;
 }
 
+:root{
+    --fundoPrincipal: #1d2026;
+    --branco: #fff;
+    --Segundo-background: #efefef;
+    --background-span:#999;
+    --ativar: green; 
+    --terceiro-background: #00986f;
+}
+
 .hero{
-    background: #1d2026;
+    background: var(--fundoPrincipal);
     min-height: 100vh;
     width: 100%;
-    color: #fff;
+    color: var(--branco);
     position: relative;
 }
 
@@ -42,18 +51,18 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: #fff;
+    color: var(--branco);
     transition: all ease 0.4s;
     border-bottom: 3px solid transparent;
 }
 
 nav ul li a:hover{
     padding-bottom: 5px;
-    border-bottom: 3px solid green;
+    border-bottom: 3px solid var(--ativar);
 }
 
 button{
-    background: #efefef;
+    background: var(--Segundo-background);
     height: 30px;
     width: 60px;
     border-radius: 20px;
@@ -66,7 +75,7 @@ button{
 
 button span{
     display: block;
-    background: #999;
+    background: var(--background-span);
     height: 26px;
     width: 26px;
     border-radius: 50%;
@@ -116,10 +125,10 @@ button span{
 
 .text-container a{
     text-decoration: none;
-    background: #00986f;
+    background: var(--terceiro-background);
     padding: 14px;
     display: inline-block;
-    color: #fff;
+    color: var(--branco);
     font-size: 18px;
     margin-top: 30px;
     border-radius: 30px;
@@ -135,7 +144,7 @@ button span{
 .controle .linha{
     width: 250px;
     height: 4px;
-    background: #fff;
+    background: var(--branco);
     margin: 0 20px;
     border-radius: 2px;
 }
@@ -145,16 +154,16 @@ button span{
     height: 8px;
     margin-top: -2px;
     border-radius: 4px;
-    background: #00986f;
+    background: var(--terceiro-background);
     display: block;
 }
 
 .ativar{
-    background: green;
+    background: var(--ativar);
 }
 
 .ativar span{
-    background: #fff;
+    background: var(--branco);
     margin-left: 31px;
 }
 
